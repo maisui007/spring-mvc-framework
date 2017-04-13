@@ -17,8 +17,8 @@
        <mvc:annotation-driven/>
 
        <!-- 资源管理 -->
-       <mvc:resources location="/resources/" mapping="/resources/**"/>
-       <mvc:resources location="/upload/" mapping="/upload/**"/>
+       <mvc:resources location="/WEB-INF/jsp/resources/" mapping="/resources/**"/>
+       <mvc:resources location="/WEB-INF/jsp/upload/" mapping="/upload/**"/>
 
        <!-- 上传文件解析器 -->
        <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
